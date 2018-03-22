@@ -1,0 +1,59 @@
+/* CSS variables */
+:root{
+  --primary:  #fd0;
+  --shadow:  0 1px 5px rgba(0,0,0,.5);
+}
+
+/* Every elements */
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  margin: 0;
+  padding: 0;
+}
+html{
+  touch-action: manipulation;
+}
+body{
+  background-color: #f1f1f1;
+  perspective:  100px;
+}
+
+/*Elements*/
+
+/*inputs*/
+/* switch */
+label.switch{
+  display: block;
+  /* background-color: #a0c2f9; */
+  background-color: #bbb;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 10px;
+  height: 25px;
+  width: 50px;
+}
+/* input[type=checkbox]:checked ~ .indicator{ */
+input[type=checkbox] + .indicator{
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+  transform: scale(1.2);
+}
+input[type=checkbox]:checked + .indicator{
+  background-color: #4285f4;
+  float: right;
+}
+
+input[type=checkbox]:checked{
+  background-color: #f00;
+}
