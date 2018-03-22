@@ -18,7 +18,7 @@ class UserCompany extends React.Component {
           user(login: "${this.props.username}"){
             company
           }
-        }`
+        }`,
       },
       headers: {
         Authorization: `bearer 88d4147bfa6699aeea94b7081afaf02c666d70e4`
@@ -37,23 +37,18 @@ class UserCompany extends React.Component {
       })
     })
   }
-
   render() {
-    return this.state.error ? this.state.loaded
-    ? this.state.company || 'Unknown'
-    : '...'
+    return this.state.loaded ? this.state.company || 'Unknown' : '...'
   }
 }
 
 const username = 'kentcdodds',
-el = (
-  <div>
+el = (<div>
   <div>
   {`@${username} works at `}
     <UserCompany username={username}/>
   </div>
-</div>
-)
+</div>)
 
 ReactDOM.render(
   el,
