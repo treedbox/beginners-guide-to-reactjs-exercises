@@ -1,4 +1,4 @@
-# Exercises from The Beginner's Guide to ReactJS
+# Exercises from The Beginner's Guide to ReactJS from egghead.io
 > React exercises based on "The Beginner's Guide to ReactJS" from https://egghead.io/courses/the-beginner-s-guide-to-reactjs
 
 ![screenshot](assets/screenshot.png)
